@@ -5,6 +5,7 @@ ENV NODE_ENV=production \
     SILENT=false \
     USER=nodebb \
     UID=1001 \
+    NODE_OPTIONS=--max_old_space_size=8192 \
     GID=1001
 
 WORKDIR /usr/src/app/
